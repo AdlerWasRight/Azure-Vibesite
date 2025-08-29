@@ -1,0 +1,68 @@
+
+
+
+/* Basic Reset & Defaults */
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  /* font-family: 'VT323', monospace; */ /* Previous font */
+  font-family: 'VT323', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #181818; /* Classic retro terminal background */
+  color: #ffcc00; /* Amber text color for terminal effect */
+}
+
+code {
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; */
+  font-family: 'VT323', monospace; /* Inherit from body */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit; /* Links inherit color by default */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button,
+input[type="submit"],
+input[type="button"] {
+  cursor: pointer;
+}
+
+input, 
+textarea,
+button {
+    font-family: 'VT323', monospace;
+    font-size: inherit;
+    padding: 0.5em;
+    margin: 0.25em 0;
+    border: 1px solid #ffcc00;
+    background-color: #181818;
+    color: #ffcc00;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resize */
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.error-message {
+  color: #ff6b6b; /* Reddish error color */
+  font-size: 0.9em;
+  margin-top: 0.5em;
+} 

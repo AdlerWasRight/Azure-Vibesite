@@ -1,0 +1,31 @@
+/* Amber-on-Black Retro Terminal Theme */
+:root {
+  --terminal-bg: #181818;
+  --terminal-text: #ffcc00;
+  --terminal-accent: #ffd700;
+  --terminal-border: #555;
+  --terminal-error: #ff6b6b;
+  --font-family-terminal: 'VT323', monospace;
+}
+
+body {
+  background-color: var(--terminal-bg);
+  color: var(--terminal-text);
+  font-family: var(--font-family-terminal);
+}
+
+input, textarea, button {
+  font-family: var(--font-family-terminal);
+  color: var(--terminal-text);
+  background: #222;
+  border: 1px solid var(--terminal-border);
+}
+
+.app-header h1, h1, h2, h3, h4, h5, h6 {
+  color: var(--terminal-accent);
+  font-family: var(--font-family-terminal);
+}
+
+.error-message {
+  color: var(--terminal-error);
+}
